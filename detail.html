@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <title>Blog UI</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Blogs<span>.</span></a>
+
+        <div class="nav__auth" id="nav-auth">
+          <a href="write.html" class="nav__auth-write"
+            ><i class="bx bx-edit"></i> Write</a
+          >
+          <spans class="nav__auth-username">John Doe</spans>
+          <a href="#" class="button nav__auth-logout">Logout</a>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section
+        class="section hero__detail"
+        style="background-image: url('./assets/media/bg-detail.jpg')"
+      >
+        <h1 class="hero__title">Does Anybody Still Use JQuery?</h1>
+      </section>
+      <section class="section detail__post container">
+        <div class="detail__post-reading">
+          <div class="detail__post-profile">
+            <img
+              class="detail__post-img"
+              src="./assets/media/profile.jpg"
+              alt=""
+            />
+            <div>
+              <h6 class="detail__post-title">Samantha</h6>
+              <span class="detail__post-date">posted 2 days ago</span>
+            </div>
+            <div class="detail__post-update">
+              <i class="bx bx-pencil btn-edit"></i>
+              <i class="bx bx-trash-alt btn-trash"></i>
+            </div>
+            <div class="detail__post-social">
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-facebook"></i>
+              <i class="bx bxl-linkedin-square"></i>
+            </div>
+          </div>
+          <div class="detail__post-content">
+            <p class="detail__post-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              itaque id voluptatum quidem aperiam laborum veniam inventore
+              doloribus minus a nostrum quibusdam earum error exercitationem
+              excepturi est ex debitis quas laboriosam non, doloremque
+              aspernatur. Aut itaque ipsa facilis officiis perferendis?
+              Laboriosam architecto voluptatibus esse voluptatum dolores
+              pariatur vitae voluptas reiciendis blanditiis. Officiis, velit?
+              Repellendus dolorem placeat, commodi optio ipsam eveniet porro
+              consequatur, quod dolore laboriosam, at voluptatibus dicta
+              assumenda? Aut aperiam est sed cum voluptatum, itaque facere amet
+              nisi non! Veritatis nesciunt eius, fugiat esse laboriosam
+              voluptatem? Neque error, molestiae vel voluptatem laudantium eaque
+              obcaecati quis temporibus, ad, placeat sequi!
+            </p>
+            <p class="detail__post-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              itaque id voluptatum quidem aperiam laborum veniam inventore
+              doloribus minus a nostrum quibusdam earum error exercitationem
+              excepturi est ex debitis quas laboriosam non, doloremque
+              aspernatur. Aut itaque ipsa facilis officiis perferendis?
+              Laboriosam architecto voluptatibus esse voluptatum dolores
+              pariatur vitae voluptas reiciendis blanditiis. Officiis, velit?
+              Repellendus dolorem placeat, commodi optio ipsam eveniet porro
+              consequatur, quod dolore laboriosam, at voluptatibus dicta
+              assumenda? Aut aperiam est sed cum voluptatum, itaque facere amet
+              nisi non! Veritatis nesciunt eius, fugiat esse laboriosam
+              voluptatem? Neque error, molestiae vel voluptatem laudantium eaque
+              obcaecati quis temporibus, ad, placeat sequi!
+            </p>
+          </div>
+        </div>
+        <div class="detail__post-recomend">
+          <h3 class="detail__post-recomend-title">Popular Reading</h3>
+          <article class="content__blog-item detail__post-recomend-content">
+            <div class="content__img-container">
+              <img src="./assets/media/blog1.jpg" alt="" class="content__img" />
+              <a href="#" class="button content__blog-buttton">
+                <i class="bx bx-right-arrow-alt button-arrow"></i>
+              </a>
+            </div>
+            <h4 class="content__blog-title">Title</h4>
+          </article>
+          <article class="content__blog-item detail__post-recomend-content">
+            <div class="content__img-container">
+              <img src="./assets/media/blog2.jpg" alt="" class="content__img" />
+              <a href="#" class="button content__blog-buttton">
+                <i class="bx bx-right-arrow-alt button-arrow"></i>
+              </a>
+            </div>
+            <h4 class="content__blog-title">Title</h4>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span class="footer__copyright">&#169; ypcode. All rigths reserved</span>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

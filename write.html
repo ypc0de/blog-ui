@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <title>Blog UI</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Blogs<span>.</span></a>
+
+        <div class="nav__auth" id="nav-auth">
+          <a href="#" class="nav__auth-write"
+            ><i class="bx bx-edit"></i> Write</a
+          >
+          <spans class="nav__auth-username">John Doe</spans>
+          <a href="#" class="button nav__auth-logout">Logout</a>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section
+        class="section section__write"
+        style="background-image: url('./assets/media/bg-detail.jpg')"
+      >
+        <h1 class="hero__title">Share your story</h1>
+      </section>
+      <section class="section write container">
+        <div class="write__post">
+          <form action="">
+            <input type="text" placeholder="your title" />
+            <textarea
+              id="description"
+              cols="30"
+              rows="10"
+              placeholder="Description"
+            ></textarea>
+          </form>
+        </div>
+        <div class="write__publish">
+          <div class="write__publish-box">
+            <h6 class="write__publish-box-title">Publish</h6>
+
+            <p class="write__publish-paragraph">
+              <span class="write__publish-status">Status</span> : Draft
+            </p>
+            <p class="write__publish-paragraph">
+              <span class="write__publish-visibility">Visibility</span> : Public
+            </p>
+            <label
+              class="write__publish-paragraph upload-image"
+              for="upload-image"
+              >upload image</label
+            >
+            <input type="file" id="upload-image" style="display: none" />
+            <div class="write__publish-btn">
+              <button class="write__publish-btn-draft">Save as a draft</button>
+              <button class="write__publish-btn-update">Update</button>
+            </div>
+          </div>
+          <div class="write__publish-box">
+            <h6 class="write__publish-box-title">Category</h6>
+            <form action="">
+              <div class="write__publish-form-group">
+                <label for="html">Html</label>
+                <input type="radio" />
+              </div>
+              <div class="write__publish-form-group">
+                <label for="css">Css</label>
+                <input type="radio" />
+              </div>
+              <div class="write__publish-form-group">
+                <label for="javascript">Javascript</label>
+                <input type="radio" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span class="footer__copyright">&#169; ypcode. All rigths reserved</span>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

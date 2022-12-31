@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <title>Blog UI</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Blogs<span>.</span></a>
+
+        <div class="nav__auth" id="nav-auth">
+          <a href="login.html" class="nav__auth-login">Login</a>
+          <a href="register.html" class="button nav__auth-register">Register</a>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section
+        class="section hero"
+        style="background-image: url('./assets/media/hero.jpg')"
+      >
+        <h1 class="hero__title">
+          Expand Your Mind And <br />
+          Read What You Love
+        </h1>
+        <form class="hero__form" action="">
+          <div class="form-group">
+            <input type="email" placeholder="Enter your email" />
+          </div>
+          <div class="form-group">
+            <button
+              class="button"
+              style="padding-top: 1rem; padding-bottom: 1rem"
+            >
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="section content container">
+        <div class="content__container">
+          <div class="content__category">
+            <h2 class="content__category-title">Categories</h2>
+            <ul class="content__category-list">
+              <li class="list-item">
+                <a href="#html" class="link-item">Html</a>
+              </li>
+              <li class="list-item">
+                <a href="#css" class="link-item">Css</a>
+              </li>
+              <li class="list-item">
+                <a href="#javascript" class="link-item">Javascript</a>
+              </li>
+            </ul>
+          </div>
+          <div class="content__blogs">
+            <article class="content__blog-item">
+              <div class="content__img-container">
+                <img
+                  src="./assets/media/blog1.jpg"
+                  alt=""
+                  class="content__img"
+                />
+                <a href="detail.html" class="button content__blog-buttton">
+                  <i class="bx bx-right-arrow-alt button-arrow"></i>
+                </a>
+              </div>
+              <h4 class="content__blog-title">Title</h4>
+              <p class="content__blog-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+                maiores cum, quas omnis sequi accusantium?
+              </p>
+            </article>
+            <article class="content__blog-item">
+              <div class="content__img-container">
+                <img
+                  src="./assets/media/blog2.jpg"
+                  alt=""
+                  class="content__img"
+                />
+                <a href="detail.html" class="button content__blog-buttton">
+                  <i class="bx bx-right-arrow-alt button-arrow"></i>
+                </a>
+              </div>
+              <h4 class="content__blog-title">Title</h4>
+              <p class="content__blog-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+                maiores cum, quas omnis sequi accusantium?
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span class="footer__copyright">&#169; ypcode. All rigths reserved</span>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
